@@ -6,28 +6,65 @@
 <title>GramoAI Tools Directory</title>
 
 <style>
-body{
-font-family:Arial,sans-serif;
-background:#0f172a;
-color:white;
+
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-header{
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
 background:#111827;
 padding:20px;
 text-align:center;
 }
 
-h1{
-margin:0;
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:20px;
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#cbd5e1;
+}
+
+.search{
+max-width:600px;
+margin:30px auto;
+}
+
+.search input{
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+font-size:18px;
+}
+
+.section{
+padding:50px 8%;
+}
+
+.section h2{
+margin-bottom:25px;
+color:#22c55e;
 }
 
 .grid{
@@ -37,88 +74,170 @@ gap:20px;
 }
 
 .card{
-background:#1e293b;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
 padding:20px;
-border-radius:15px;
+border-radius:20px;
+transition:.3s;
 }
 
-.card h2{
-margin-top:0;
+.card:hover{
+transform:translateY(-10px);
 }
 
 .btn{
 display:inline-block;
+margin-top:15px;
+padding:10px 20px;
 background:#22c55e;
-padding:10px 15px;
-text-decoration:none;
 color:black;
-border-radius:8px;
+text-decoration:none;
 font-weight:bold;
+border-radius:10px;
 }
 
 footer{
-text-align:center;
-padding:20px;
-margin-top:30px;
 background:#111827;
+padding:25px;
+text-align:center;
+margin-top:50px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
-<header>
-<h1>🤖 GramoAI Tools Directory</h1>
-<p>Best AI Tools For Students, Creators & Businesses</p>
-</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="prompts.html">Prompts</a>
+<a href="earn.html">Earn</a>
+</nav>
 
-<div class="container">
+<div class="hero">
+
+<h1>🤖 AI Tools Directory</h1>
+
+<p>
+Discover the best AI tools for creators, students and businesses.
+</p>
+
+<div class="search">
+<input type="text" placeholder="Search AI Tools...">
+</div>
+
+</div>
+
+<section class="section">
+
+<h2>💬 AI Chat Tools</h2>
 
 <div class="grid">
 
 <div class="card">
-<h2>ChatGPT</h2>
-<p>AI writing, coding and productivity assistant.</p>
-<a class="btn" href="https://chatgpt.com" target="_blank">Visit</a>
+<h3>ChatGPT</h3>
+<p>AI assistant for writing, coding and productivity.</p>
+<a href="https://chatgpt.com" class="btn">Visit</a>
 </div>
 
 <div class="card">
-<h2>Gemini</h2>
+<h3>Gemini</h3>
 <p>Google AI assistant for research and content creation.</p>
-<a class="btn" href="https://gemini.google.com" target="_blank">Visit</a>
+<a href="https://gemini.google.com" class="btn">Visit</a>
 </div>
 
 <div class="card">
-<h2>Claude</h2>
-<p>Advanced AI assistant by Anthropic.</p>
-<a class="btn" href="https://claude.ai" target="_blank">Visit</a>
+<h3>Claude</h3>
+<p>Long-form AI assistant by Anthropic.</p>
+<a href="https://claude.ai" class="btn">Visit</a>
 </div>
 
 <div class="card">
-<h2>Perplexity AI</h2>
-<p>AI-powered search engine with citations.</p>
-<a class="btn" href="https://perplexity.ai" target="_blank">Visit</a>
+<h3>Perplexity</h3>
+<p>AI search engine with citations.</p>
+<a href="https://perplexity.ai" class="btn">Visit</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>🎨 AI Image Tools</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Midjourney</h3>
+<p>Create stunning AI images.</p>
 </div>
 
 <div class="card">
-<h2>Midjourney</h2>
-<p>Create stunning AI-generated images.</p>
-<a class="btn" href="https://midjourney.com" target="_blank">Visit</a>
+<h3>Leonardo AI</h3>
+<p>Generate creative artwork.</p>
 </div>
 
 <div class="card">
-<h2>Canva AI</h2>
-<p>Design graphics, posts and presentations with AI.</p>
-<a class="btn" href="https://canva.com" target="_blank">Visit</a>
+<h3>Ideogram</h3>
+<p>Create images with text.</p>
 </div>
 
 </div>
 
+</section>
+
+<section class="section">
+
+<h2>🎬 AI Video Tools</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Runway</h3>
+<p>AI video generation and editing.</p>
 </div>
+
+<div class="card">
+<h3>Pika</h3>
+<p>Create videos from prompts.</p>
+</div>
+
+<div class="card">
+<h3>Kling</h3>
+<p>Advanced AI video generator.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>🎤 AI Voice Tools</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>ElevenLabs</h3>
+<p>Realistic AI voice generation.</p>
+</div>
+
+<div class="card">
+<h3>Suno AI</h3>
+<p>Create songs with AI.</p>
+</div>
+
+</div>
+
+</section>
 
 <footer>
-© 2026 GramoAI | AI Tools & Guides
+
+© 2026 GramoAI Tools Directory
+
 </footer>
 
 </body>
