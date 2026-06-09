@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://akshaypareek55.github.io/GramoAi/sitemap.xml
