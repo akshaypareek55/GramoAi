@@ -1,0 +1,46 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-robot",
+      "description": "Friendly white 3D AI robot with glowing cyan eyes",
+      "imageUrl": "https://picsum.photos/seed/friendly-ai-bot/800/800",
+      "imageHint": "white 3d robot cyan eyes"
+    },
+    {
+      "id": "ai-tool-gpt",
+      "description": "ChatGPT interface concept",
+      "imageUrl": "https://picsum.photos/seed/gpt-v1/400/300",
+      "imageHint": "ai chat interface"
+    },
+    {
+      "id": "ai-tool-claude",
+      "description": "Claude AI reasoning concept",
+      "imageUrl": "https://picsum.photos/seed/claude-v1/400/300",
+      "imageHint": "neural network brain"
+    },
+    {
+      "id": "ai-tool-gemini",
+      "description": "Gemini multi-modal concept",
+      "imageUrl": "https://picsum.photos/seed/gemini-v1/400/300",
+      "imageHint": "colorful abstract ai"
+    },
+    {
+      "id": "ai-tool-runway",
+      "description": "Runway video generation concept",
+      "imageUrl": "https://picsum.photos/seed/runway-v1/400/300",
+      "imageHint": "cinematic ai video"
+    },
+    {
+      "id": "ai-tool-perplexity",
+      "description": "Perplexity AI search concept",
+      "imageUrl": "https://picsum.photos/seed/perp-v1/400/300",
+      "imageHint": "digital search data"
+    },
+    {
+      "id": "earning-guide-1",
+      "description": "Freelancing with AI",
+      "imageUrl": "https://picsum.photos/seed/earn1/600/400",
+      "imageHint": "earning money ai"
+    }
+  ]
+}

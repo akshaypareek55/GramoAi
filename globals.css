@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 232 54% 5%;
+    --foreground: 0 0% 100%;
+    --card: 232 54% 8%;
+    --card-foreground: 0 0% 100%;
+    --popover: 232 54% 8%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 110 100% 54%;
+    --primary-foreground: 232 54% 5%;
+    --secondary: 182 100% 50%;
+    --secondary-foreground: 232 54% 5%;
+    --muted: 232 30% 15%;
+    --muted-foreground: 232 10% 70%;
+    --accent: 182 100% 50%;
+    --accent-foreground: 232 54% 5%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 232 30% 15%;
+    --input: 232 30% 15%;
+    --ring: 110 100% 54%;
+    --radius: 1.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#050816] text-foreground selection:bg-primary selection:text-primary-foreground antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+}
+
+.neon-glow-primary {
+  @apply shadow-[0_0_20px_rgba(57,255,20,0.4)];
+}
+
+.neon-glow-secondary {
+  @apply shadow-[0_0_20px_rgba(0,245,255,0.4)];
+}
+
+.neon-glow-purple {
+  @apply shadow-[0_0_20px_rgba(168,85,247,0.4)];
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-blue-400;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse-slow {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(1deg); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(-1deg); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-reverse-slow 25s linear infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 8s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
