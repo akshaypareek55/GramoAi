@@ -1,69 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>GramoAI Studio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GramoAI - Learn AI • Use AI • Earn With AI</title>
+<meta name="description" content="India's AI Learning & Earning Hub">
+
 <style>
-body{
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
+}
+
+body{
 background:#0f172a;
 color:white;
-margin:0;
-text-align:center;
 }
-.hero{
-padding:80px 20px;
+
+html{
+scroll-behavior:smooth;
 }
-h1{
-font-size:50px;
+
+/* Navbar */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111827;
+position:sticky;
+top:0;
+z-index:1000;
 }
-.btn{
-background:#22c55e;
-padding:12px 25px;
-border-radius:10px;
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#22c55e;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
 text-decoration:none;
 color:white;
-display:inline-block;
-margin-top:15px;
 }
+
+/* Hero */
+.hero{
+min-height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+animation:fadeIn 1.5s ease;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+color:#cbd5e1;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:#22c55e;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:10px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+/* Sections */
+.section{
+padding:80px 8%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
 .card{
 background:#1e293b;
-margin:20px;
-padding:20px;
+padding:25px;
 border-radius:15px;
+transition:.4s;
 }
-.price{
-font-size:32px;
-font-weight:bold;
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#22c55e;
+}
+
+/* Footer */
+footer{
+background:#111827;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 </style>
 </head>
 <body>
 
-<div class="hero">
-<h1>🚀 GramoAI Studio</h1>
-<p>AI Prompts • AI Tools • AI Earning</p>
-<a href="tools.html" class="btn">Explore AI Tools</a>
+<nav>
+<div class="logo">GramoAI</div>
+
+<ul>
+<li><a href="tools.html">Tools</a></li>
+<li><a href="prompts.html">Prompts</a></li>
+<li><a href="earn.html">Earn</a></li>
+<li><a href="battles.html">Battles</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>🚀 GramoAI</h1>
+
+<p>
+Learn AI • Use AI • Earn With AI
+</p>
+
+<a href="tools.html" class="btn">
+Explore AI Tools
+</a>
+</section>
+
+<section class="section">
+
+<h2>Why GramoAI?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🤖 AI Tools</h3>
+<p>Discover the best AI tools for students, creators and businesses.</p>
 </div>
 
 <div class="card">
-<h2>🔥 Free Plan</h2>
-<p>AI Prompts</p>
-<p>AI Tools</p>
-<p>Daily Access</p>
+<h3>🎯 Prompt Library</h3>
+<p>Ready-to-use prompts for ChatGPT, Gemini and Claude.</p>
 </div>
 
 <div class="card">
-<h2>💎 Pro Plan</h2>
-<p class="price">₹29 / Month</p>
-<p>Premium Prompts</p>
-<p>Unlimited Access</p>
+<h3>💰 Earn With AI</h3>
+<p>Learn freelancing, content creation and AI side hustles.</p>
 </div>
 
 <div class="card">
-<h2>💰 Earn With AI</h2>
-<p>Learn AI freelancing, content creation and online earning.</p>
+<h3>⚔️ AI Battles</h3>
+<p>Compare ChatGPT, Gemini, Claude and more.</p>
 </div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 GramoAI • India's AI Learning & Earning Hub
+</footer>
 
 </body>
 </html>
